@@ -205,3 +205,36 @@ StockFlow/
 ## Author
 
 Developed as a portfolio project to demonstrate practical C#, ASP.NET Core Web API, Entity Framework Core, SQL Server and REST API development skills.
+
+## Automated Tests
+
+StockFlow includes automated integration tests using xUnit, ASP.NET Core WebApplicationFactory, and Entity Framework Core InMemory.
+
+Run the tests using:
+
+    dotnet test .\StockFlow.Tests\StockFlow.Tests.csproj
+
+The integration tests cover:
+
+- Retrieving products.
+- Handling products that do not exist.
+- Creating products.
+- Increasing stock through received movements.
+- Preventing sales that would reduce stock below zero.
+- Retrieving products that require replenishment.
+
+Latest test results: 6 passed, 0 failed.
+
+## Screenshots
+
+### Swagger API Documentation
+
+![Swagger API overview](assets/swagger-overview.png)
+
+### Product API
+
+![Product creation endpoint](assets/product-creation.png)
+
+### Inventory Movement API
+
+![Inventory movement endpoint](assets/inventory-movement.png)
